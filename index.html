@@ -3,68 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI4Novice - Learn AI Made Simple</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 100%;
+            max-width: 1200px;
             padding: 20px;
-            line-height: 1.6;
-            background-color: #000;
-            color: #fff;
         }
-        header {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background: #1a1a1a;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(255,255,255,0.1);
-            position: relative;
+        .logo {
+            margin-right: auto;
         }
-        #logo {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            width: 100px; /* Adjust size as needed */
-            height: auto;
+        .logo img {
+            max-height: 100px; /* Adjust the size as needed */
         }
-        section {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background: #1a1a1a;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(255,255,255,0.1);
+        .message {
+            text-align: center;
+            flex: 1;
         }
-        h1, h2 {
-            color: #00ccff;
-        }
-        a {
-            color: #00ccff;
+        .message a {
+            color: #1DA1F2; /* X's brand color */
             text-decoration: none;
         }
-        a:hover {
+        .message a:hover {
             text-decoration: underline;
-        }
-        @media (max-width: 600px) {
-            header, section {
-                padding: 10px;
-            }
-            #logo {
-                width: 80px; /* Smaller logo on mobile */
-            }
         }
     </style>
 </head>
 <body>
-    <header>
-        <img id="logo" src="logo_a14novice.jpeg" alt="AI4Novice Logo">
-        <h1>AI4Novice</h1>
-        <p>Welcome to AI4Novice, where we make AI and machine learning accessible to everyone! Follow us on X for daily insights.</p>
-    </header>
-
-    
-    
+    <div class="container">
+        <div class="logo">
+            <img src="logo_a14novice.jpeg" alt="Logo">
+        </div>
+        <div class="message">
+            <h2>Follow me on X for updates!</h2>
+            <p>Check out my profile <a href="https://x.com/@AI4Novice">here</a>.</p>
+        </div>
+    </div>
 </body>
 </html>
